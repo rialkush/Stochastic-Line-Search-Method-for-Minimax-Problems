@@ -1,2 +1,5 @@
 # Stochastic-Line-Search-Method-for-Minimax-Problems
-EE606 Course Project
+## [(EE606: Optimization for Big-Data) Course Project]
+The success of adaptive stochastic optimization algorithms for solving problems arising in ML and SP are now widely recognized. Minimax optimization problems occur frequently in a wide range of signal and data processing applications such as fair beamforming, training generative adversarial networks (GANs), and robust machine learning (ML).Through this project we want to extend stochastic line search method to a class of minimax problems. Our aim is to study the convergence of proposed method to  minimax optimization problems, i.e., $\min_{x\in X} \max_{y\in Y} H(x,y),$ where $H(.,y)$ can be convex for each y and $H(x,.)$ is concave for each x.
+
+Here we adapt a classical backtracking Armijo line search[3] to the stochastic optimization setting. In our method we assume that the computation of gradients are available upto some dynamically adjusted accuracy with large and fixed probabilities, in contrast to traditional line search which relies on exact computations of the gradient and values of the objective function.
